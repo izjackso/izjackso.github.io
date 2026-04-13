@@ -1,0 +1,182 @@
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #0f0b1f, #1b1235);
+    color: #e8e4ff;
+}
+
+.topbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(20, 14, 40, 0.95);
+    border-bottom: 2px solid #4a3b7a;
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: #e6dcff;
+    background-color: #35286a;
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-buttons a:hover {
+    background-color: #5b46a3;
+    transform: translateY(-2px);
+}
+
+.page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: #1b1538;
+    border: 2px solid #4d3f85;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-top: 0;
+    color: #bda7ff;
+}
+
+.hero p {
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 1rem auto 0 auto;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.anime-card {
+    display: grid;
+    grid-template-rows: 170px 1fr;
+    background-color: #1c163d;
+    border-radius: 1.4rem;
+    overflow: hidden;
+    min-height: 400px;
+    max-width: 480px;
+    margin: 0 auto;
+    border: 2px solid #3f3274;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #c9baff;
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+}
+
+.tag {
+    background-color: #32286b;
+    padding: 0.55rem 0.95rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.card-footer button {
+    border: none;
+    background-color: #6a55d8;
+    color: white;
+    padding: 0.75rem 1.15rem;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.card-footer button:hover {
+    background-color: #8a76ff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 720px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .anime-card {
+        width: 100%;
+        min-height: 100vh;
+        grid-template-rows: 260px 1fr;
+    }
+
+    .page-content {
+        padding: 1rem;
+    }
+
+}

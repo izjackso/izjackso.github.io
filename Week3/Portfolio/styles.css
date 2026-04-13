@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+* {
+    --toasted-almond: #ea8c55ff;
+    --rosy-copper: #c75146ff;
+    --brick-red: #ad2e24ff;
+    --dark-wine: #81171bff;
+    --black-cherry: #540804ff;
+    color: var(--toasted-almond);
+}
+
+body{
+    background-image: url('./Assets/Red.png');
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+    font-family: "permanent marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title{
+    font-family: "permanent marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 16px;
+    line-height: 84px;
+    color: var(--toasted-almond)
+}
+
+h2{
+    font-family: "permanent marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 32px;
+    color: var(--rosy-copper)
+}
+
+.projectCards button {
+    width: 300px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    gap: 10px; /* space between title, image, and description */
+}
+
+.projectCards h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.projectCards p {
+    text-align: center;
+    margin: 0;
+}
+
+/* image sizing */
+.projectCards img {
+    width: 120px;   /* adjust as needed */
+    height: auto;
+}
