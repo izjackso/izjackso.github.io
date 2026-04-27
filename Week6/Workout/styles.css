@@ -1,0 +1,115 @@
+:root {
+    --bg: #0f0f0f;
+    --card: #1a1a1a;
+    --text: #f5f5f5;
+    --muted: #999;
+    --accent: #3a86ff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* HEADER */
+.top {
+    padding: 2rem;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.top h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.top p {
+    color: var(--muted);
+}
+
+/* BUTTON BAR */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.work-btn {
+    padding: 0.7rem 1.5rem;
+    border: 1px solid #333;
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.work-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* MAIN DISPLAY */
+.display {
+    width: 70%;
+    margin: 2rem auto;
+}
+
+/* TITLE */
+#title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* CARD CONTAINER */
+#image-area {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* IMAGE CARDS */
+#image-area img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+/* LIST */
+#exercise-list {
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+#exercise-list li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid #333;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* BUTTON */
+#toggle-theme {
+    padding: 0.6rem 1.2rem;
+    background: var(--accent);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* DARK/LIGHT TOGGLE EFFECT */
+.dark {
+    --bg: #f5f5f5;
+    --text: #111;
+    --card: #ffffff;
+}

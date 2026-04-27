@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="workout.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="top">
+    <h1>Workout Dashboard</h1>
+    <p id="greeting"></p>
+</header>
+
+<section class="controls">
+    <button class="work-btn" data-type="upper">Upper</button>
+    <button class="work-btn" data-type="lower">Lower</button>
+    <button class="work-btn" data-type="core">Core</button>
+</section>
+
+<section class="display">
+    <h2 id="title">Select a workout</h2>
+    
+    <div id="image-area"></div>
+
+    <ul id="exercise-list"></ul>
+</section>
+
+<footer>
+    <button id="toggle-theme">Toggle Theme</button>
+</footer>
+
+</body>
+</html>
